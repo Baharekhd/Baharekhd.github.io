@@ -27,10 +27,10 @@ export function Hero() {
                     rotation={0}
                     speed={1}
                     colors={[
-                        "hsl(330, 100%, 75%)",
-                        "hsl(350, 100%, 85%)",
-                        "hsl(340, 90%, 80%)",
-                        "hsl(320, 100%, 90%)",
+                        "#8F2D56",
+                        "#73D2DE",
+                        "#FFBC42",
+                        "#8F2D56",
                     ]}
                 />
             </div>
@@ -63,8 +63,7 @@ export function Hero() {
                         transition={{ duration: 0.6, delay: 0.4 }}
                         className="text-white/90 text-xl md:text-2xl font-light leading-relaxed max-w-3xl mx-auto"
                     >
-                        Designer & Developer crafting beautiful digital
-                        experiences with clean code and thoughtful design.
+                        I’m a Graphic designer and UI/UX designer based in Hamburg, Germany.
                     </motion.p>
 
                     <motion.div

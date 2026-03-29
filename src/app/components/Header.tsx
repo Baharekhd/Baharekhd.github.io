@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router";
+import "./Header.css";
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,9 +22,8 @@ export function Header() {
 
     return (
         <header
-            className="fixed top-0 left-0 right-0 backdrop-blur-md z-50"
+            className="fixed top-0 left-0 right-0 backdrop-blur-md z-50 rainbow-header"
             style={{
-                background: "hsl(330,100%,75%, 0.10)",
                 borderBottom: "1px solid hsl(330,100%,75%, 0.20)",
             }}
         >
@@ -44,18 +44,36 @@ export function Header() {
                         >
                             Work
                         </button>
-                        <button
-                            onClick={() => scrollToSection("about")}
-                            className="text-white/90 hover:text-white transition-colors font-light"
-                        >
-                            About
-                        </button>
-                        <button
-                            onClick={() => scrollToSection("contact")}
-                            className="px-6 py-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-full hover:bg-white/30 transition-colors font-light"
-                        >
-                            Contact
-                        </button>
+                        {isHome ? (
+                            <button
+                                onClick={() => scrollToSection("about")}
+                                className="text-white/90 hover:text-white transition-colors font-light"
+                            >
+                                About
+                            </button>
+                        ) : (
+                            <Link
+                                to="/about"
+                                className="text-white/90 hover:text-white transition-colors font-light"
+                            >
+                                About
+                            </Link>
+                        )}
+                        {isHome ? (
+                            <button
+                                onClick={() => scrollToSection("contact")}
+                                className="px-6 py-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-full hover:bg-white/30 transition-colors font-light"
+                            >
+                                Contact
+                            </button>
+                        ) : (
+                            <Link
+                                to="/contact"
+                                className="px-6 py-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-full hover:bg-white/30 transition-colors font-light"
+                            >
+                                Contact
+                            </Link>
+                        )}
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -76,18 +94,38 @@ export function Header() {
                         >
                             Work
                         </button>
-                        <button
-                            onClick={() => scrollToSection("about")}
-                            className="text-left text-white/90 hover:text-white transition-colors font-light"
-                        >
-                            About
-                        </button>
-                        <button
-                            onClick={() => scrollToSection("contact")}
-                            className="px-6 py-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-full hover:bg-white/30 transition-colors text-center font-light"
-                        >
-                            Contact
-                        </button>
+                        {isHome ? (
+                            <button
+                                onClick={() => scrollToSection("about")}
+                                className="text-left text-white/90 hover:text-white transition-colors font-light"
+                            >
+                                About
+                            </button>
+                        ) : (
+                            <Link
+                                to="/about"
+                                className="text-left text-white/90 hover:text-white transition-colors font-light"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                About
+                            </Link>
+                        )}
+                        {isHome ? (
+                            <button
+                                onClick={() => scrollToSection("contact")}
+                                className="text-left px-6 py-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-full hover:bg-white/30 transition-colors font-light w-fit"
+                            >
+                                Contact
+                            </button>
+                        ) : (
+                            <Link
+                                to="/contact"
+                                className="text-left px-6 py-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-full hover:bg-white/30 transition-colors font-light w-fit"
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Contact
+                            </Link>
+                        )}
                     </div>
                 )}
             </nav>

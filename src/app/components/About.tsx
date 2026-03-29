@@ -1,5 +1,6 @@
 import { Code, Palette, Zap, Users } from "lucide-react";
 import { motion } from "motion/react";
+import { siteImages } from "../data/projects";
 
 const skills = [
     {
@@ -34,19 +35,18 @@ export function About() {
             id="about"
             className="py-20 px-6 relative overflow-hidden"
             style={{
-                background:
-                    "linear-gradient(135deg, hsl(330,100%,75%) 0%, hsl(340,90%,80%) 50%, hsl(320,100%,90%) 100%)",
+                background: "#8F2D56",
             }}
         >
             {/* Decorative elements */}
             <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
                 <div
                     className="absolute top-20 right-20 w-80 h-80 rounded-full blur-3xl"
-                    style={{ background: "hsl(350,100%,85%)" }}
+                    style={{ background: "#FFBC42" }}
                 ></div>
                 <div
                     className="absolute bottom-20 left-20 w-64 h-64 rounded-full blur-3xl"
-                    style={{ background: "hsl(320,100%,90%)" }}
+                    style={{ background: "#73D2DE" }}
                 ></div>
             </div>
 
@@ -63,21 +63,21 @@ export function About() {
                         </h2>
                         <div className="space-y-4 text-lg text-white/80 font-light">
                             <p>
-                                I'm Bahareh, a designer and developer with a
-                                passion for creating digital experiences that
-                                are both beautiful and functional.
+                                I'm Bahareh, a creative and detail-oriented Product Designer
+                                with over 3 years of experience delivering impactful digital
+                                and print designs, branding systems, and motion graphics.
                             </p>
                             <p>
-                                With over 5 years of experience, I've worked
-                                with startups and established companies to bring
-                                their ideas to life through thoughtful design
-                                and clean code.
+                                Strong undrestanding of user behaivior and design performane,
+                                including experience with A/B testing, conversion driven design,
+                                and cross-platform visual consistency.
+                                
                             </p>
                             <p>
-                                When I'm not designing or coding, you can find
-                                me exploring new technologies, contributing to
-                                open source, or sharing knowledge with the
-                                community.
+                                Skilled in Adobe Creative Suitte, Figma, Webflow and HTML/CSS collabration
+                                I enjoy learning new technologies and sharing knowledge with the community.
+                                
+                                
                             </p>
                         </div>
                     </motion.div>
@@ -90,8 +90,8 @@ export function About() {
                         className="aspect-[4/5] bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzcyNTk2MjA0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                            alt="Workspace"
+                            src={siteImages.about.mainPhoto}
+                            alt={siteImages.profile.alt}
                             className="w-full h-full object-cover"
                         />
                     </motion.div>

@@ -2,20 +2,20 @@
 
 :root {
   --font-size: 16px;
-  --background: hsl(330, 100%, 75%);
-  --foreground: hsl(330, 100%, 15%);
-  --card: hsl(350, 100%, 85%);
-  --card-foreground: hsl(330, 100%, 15%);
-  --popover: hsl(340, 90%, 80%);
-  --popover-foreground: hsl(330, 100%, 15%);
-  --primary: hsl(320, 100%, 90%);
-  --primary-foreground: hsl(330, 100%, 15%);
-  --secondary: hsl(330, 100%, 75%);
-  --secondary-foreground: hsl(330, 100%, 15%);
-  --muted: hsl(350, 100%, 85%);
-  --muted-foreground: hsl(330, 100%, 15%);
-  --accent: hsl(340, 90%, 80%);
-  --accent-foreground: hsl(330, 100%, 15%);
+  --background: #8F2D56;
+  --foreground: #FFFFFF;
+  --card: #73D2DE;
+  --card-foreground: #FFFFFF;
+  --popover: #FFBC42;
+  --popover-foreground: #000000;
+  --primary: #73D2DE;
+  --primary-foreground: #FFFFFF;
+  --secondary: #FFBC42;
+  --secondary-foreground: #000000;
+  --muted: #8F2D56;
+  --muted-foreground: #FFFFFF;
+  --accent: #FFBC42;
+  --accent-foreground: #000000;
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
   --border: hsl(0, 0%, 100%, 0.3);

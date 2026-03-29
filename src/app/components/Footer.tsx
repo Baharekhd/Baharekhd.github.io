@@ -3,8 +3,7 @@ export function Footer() {
         <footer
             className="py-12 px-6 border-t border-white/10"
             style={{
-                background:
-                    "linear-gradient(135deg, hsl(330,100%,75%) 0%, hsl(340,90%,80%) 50%, hsl(320,100%,90%) 100%)",
+                background: "#8F2D56",
             }}
         >
             <div className="max-w-7xl mx-auto">

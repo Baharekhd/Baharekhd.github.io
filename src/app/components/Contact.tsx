@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, Linkedin, Github, Twitter,Dribbble } from "lucide-react";
 import { motion } from "motion/react";
 
 const socialLinks = [
@@ -11,7 +11,7 @@ const socialLinks = [
     {
         icon: Linkedin,
         label: "LinkedIn",
-        href: "https://linkedin.com",
+        href: "https://www.linkedin.com/in/bahareh-khodakarami-641832239/",
         username: "linkedin.com/in/bahareh",
     },
     {
@@ -21,10 +21,10 @@ const socialLinks = [
         username: "github.com/bahareh",
     },
     {
-        icon: Twitter,
-        label: "Twitter",
-        href: "https://twitter.com",
-        username: "@bahareh",
+        icon: Dribbble,
+        label: "Dribbble",
+        href: "https://dribbble.com/bahare___khd",
+        username: "@bahare___khd",
     },
 ];
 
@@ -34,19 +34,18 @@ export function Contact() {
             id="contact"
             className="py-20 px-6 relative overflow-hidden"
             style={{
-                background:
-                    "linear-gradient(135deg, hsl(330,100%,75%) 0%, hsl(340,90%,80%) 50%, hsl(320,100%,90%) 100%)",
+                background: "#8F2D56",
             }}
         >
             {/* Decorative elements */}
             <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
                 <div
                     className="absolute top-1/4 left-1/4 w-72 h-72 rounded-full blur-3xl"
-                    style={{ background: "hsl(350,100%,85%)" }}
+                    style={{ background: "#FFBC42" }}
                 ></div>
                 <div
                     className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full blur-3xl"
-                    style={{ background: "hsl(320,100%,90%)" }}
+                    style={{ background: "#73D2DE" }}
                 ></div>
             </div>
 
@@ -110,7 +109,7 @@ export function Contact() {
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="px-8 py-4 bg-white rounded-full text-teal-900 font-medium hover:shadow-lg transition-all"
+                    className="px-8 py-4 bg-white rounded-full text-gray-900 font-medium hover:shadow-lg transition-all"
                 >
                     Send me a message
                 </motion.button>
