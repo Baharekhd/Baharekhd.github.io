@@ -68,7 +68,7 @@ export default function PresentationViewer() {
         </button>
 
         {/* Bottom page indicator */}
-        <div className="pointer-events-auto absolute bottom-4 left-1/2 -translate-x-1/2">
+        <div className="pointer-events-auto absolute bottom-4 left-4 right-4 flex justify-center">
           <PageIndicator
             current={currentPage}
             total={totalPages}

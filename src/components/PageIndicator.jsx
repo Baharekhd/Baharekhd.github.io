@@ -12,11 +12,11 @@ export default function PageIndicator({ current, total, onPageChange }) {
   }
 
   return (
-    <div className="flex items-center gap-6 bg-white/95 backdrop-blur-sm px-5 py-3 rounded-full shadow-lg border border-gray-200">
+    <div className="flex items-center gap-3 sm:gap-6 bg-white/95 backdrop-blur-sm px-4 sm:px-5 py-3 rounded-full shadow-lg border border-gray-200">
       {/* Logo + name */}
       <div className="flex items-center gap-2">
-        <img src="/logo.png" alt="Bahareh Khodakarami" className="h-7 w-auto" />
-        <span className="text-sm font-medium text-gray-800 whitespace-nowrap">Bahareh Khodakarami</span>
+        <img src="/logo.png" alt="Bahareh Khodakarami" className="h-6 sm:h-7 w-auto" />
+        <span className="hidden sm:block text-sm font-medium text-gray-800 whitespace-nowrap">Bahareh Khodakarami</span>
       </div>
 
       {/* Divider */}
@@ -52,8 +52,8 @@ export default function PageIndicator({ current, total, onPageChange }) {
         )}
       </div>
 
-      {/* Progress bar */}
-      <div className="flex items-center gap-2">
+      {/* Progress bar — hidden on mobile */}
+      <div className="hidden sm:flex items-center gap-2">
         <div className="w-24 h-1 bg-gray-200 rounded-full overflow-hidden">
           <div
             className="h-full bg-gray-800 transition-all duration-300"
